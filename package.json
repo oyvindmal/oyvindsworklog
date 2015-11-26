@@ -1,5 +1,5 @@
 {
-  "name": "Oyvinds Worklog",
+  "name": "OyvindsWorklog",
   "version": "0.0.1",
   "dependencies": {
     "express": "^4.13.3"
