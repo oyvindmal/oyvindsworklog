@@ -2,6 +2,7 @@
   "name": "OyvindsWorklog",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "markdown": "^0.5.0"
   }
 }
