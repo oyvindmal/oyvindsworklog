@@ -6,12 +6,16 @@ http.createServer(function(req, res) {
 }).listen(port);*/
 
 var express = require('express');
-
+var fs = require('fs');
+var markdown = require( "markdown" ).markdown;
 var port = process.env.PORT || 1337;
 var app = express();
 var http = require('http').Server(app);
 app.get('/', function (req, res) {
-  res.send('Hello World from Express!');
+  fs.readFile('./content/index.md', 'utf8', function(err, contents) {
+    res.send(markdown.toHTML(contents));
+  });
+  //res.send('Hello World from Express!');
 });
 
 http.listen(port, function() {
