@@ -6,17 +6,23 @@ http.createServer(function(req, res) {
 }).listen(port);*/
 
 var express = require('express');
-var app = express();
+
 var port = process.env.PORT || 1337;
+var app = express();
+var http = require('http').Server(app);
 app.get('/', function (req, res) {
   res.send('Hello World from Express!');
 });
 
-var server = app.listen(port, function () {
+http.listen(port, function() {
+  console.log("lol");
+})
+
+/*var server = app.listen(port, function () {
   var host = server.address().address;
 
 
   console.log('Example app listening at http://%s:%s', host, port);
 });
-
+*/
 //the end
