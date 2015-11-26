@@ -13,7 +13,9 @@ var app = express();
 var http = require('http').Server(app);
 app.get('/', function (req, res) {
   fs.readFile('./content/index.md', 'utf8', function(err, contents) {
-    res.send(markdown.toHTML(contents));
+    var toptemplate = getTemplateFile("top");
+    var bottomtemplate = getTemplateFile("bottom");
+     res.send(toptemplate + markdown.toHTML(contents) + bottomtemplate);
   });
 });
   app.get('/:filename(\\w+)', function (req, res) {
@@ -23,7 +25,9 @@ app.get('/', function (req, res) {
     try {
       fs.statSync(filepath);
       fs.readFile(filepath, 'utf8', function(err, contents) {
-         res.send(markdown.toHTML(contents));
+        var toptemplate = getTemplateFile("top");
+        var bottomtemplate = getTemplateFile("bottom");
+         res.send(toptemplate + markdown.toHTML(contents) + bottomtemplate);
        });
     }
 
@@ -48,6 +52,10 @@ http.listen(port, function() {
   console.log("lol");
 })
 
+function getTemplateFile(templatename){
+    var path = "./templates/" + templatename + ".html";
+    return fs.readFileSync(path);
+}
 /*var server = app.listen(port, function () {
   var host = server.address().address;
 
