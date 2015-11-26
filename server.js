@@ -15,7 +15,33 @@ app.get('/', function (req, res) {
   fs.readFile('./content/index.md', 'utf8', function(err, contents) {
     res.send(markdown.toHTML(contents));
   });
-  //res.send('Hello World from Express!');
+});
+  app.get('/:filename(\\w+)', function (req, res) {
+
+    var renderfile = req.params.filename;
+    var filepath = './content/' + renderfile + '.md';
+    try {
+      fs.statSync(filepath);
+      fs.readFile(filepath, 'utf8', function(err, contents) {
+         res.send(markdown.toHTML(contents));
+       });
+    }
+
+    catch (e)
+    {
+      res.send("not found");
+    }
+  /*  if(fs.statSync(filepath) != undefined)
+    {
+      fs.readFile(filepath, 'utf8', function(err, contents) {
+         res.send(markdown.toHTML(contents));
+       });
+    }
+
+    else {
+      res.send("Not found");
+    }*/
+
 });
 
 http.listen(port, function() {
