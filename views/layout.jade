@@ -10,15 +10,10 @@ body
     div(class='top-bar-left')
       ul(class='menu')
         li(class='menu-text') Øyvinds Worklog
-        li
-          a(href='/') Start
-        li
-          a(href='/z/about') Om
+        include menu.jade
   div(class='row medium-8 large-7 columns')
     block content
-  footer(class='footer')
-    div(class='row')
-      div(class='small-12 medium-12 medium-push-12 columns') Trolololo
+  include footer.jade
   script(src='https://code.jquery.com/jquery-2.1.4.min.js')
   script(src='/js/foundation.js')
   script(src='/js/app.js')
