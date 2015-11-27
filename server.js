@@ -11,12 +11,14 @@ var markdown = require( "markdown" ).markdown;
 var port = process.env.PORT || 1337;
 var app = express();
 var http = require('http').Server(app);
+app.set('view engine', 'jade');
 app.get('/', function (req, res) {
   fs.readFile('./content/index.md', 'utf8', function(err, contents) {
-    var toptemplate = getTemplateFile("top");
-    var bottomtemplate = getTemplateFile("bottom");
-     res.send(toptemplate + markdown.toHTML(contents) + bottomtemplate);
+      res.render('index', {'markdownhtml': markdown.toHTML(contents)});
+    // res.send(toptemplate + markdown.toHTML(contents) + bottomtemplate);
   });
+
+
 });
   app.get('/:filename(\\w+)', function (req, res) {
 
