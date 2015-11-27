@@ -1,15 +1,19 @@
 doctype html
-html(lang="en")
-    head
-        meta(charset='UTF-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-
-
-        title= pageTitle
-
-    body
-      h1 Øyvinds fantastiske nettside
-      hr
-      block content
-      hr
-      p Powered by Uber simple super fast cms
+html(lang='en', class="no-js")
+head
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='/css/foundation.css')
+body
+  div(class='top-bar')
+    div(class='top-bar-left')
+      ul(class='menu')
+        li(class='menu-text') Øyvinds Worklog
+        li
+          a(href='/') Start
+        li
+          a(href='/z/about') Om
+  block content
+  script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+  script(src='/js/foundation.js')
+  script(src='/js/app.js')
