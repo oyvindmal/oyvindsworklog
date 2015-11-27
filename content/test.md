@@ -5,3 +5,6 @@ Dette er skrevet med github
 
 
 `System.out.println("Hello World");`
+
+<!-- regular html comment --> 
+<!--- special completely ignored comment --> 
