@@ -4,6 +4,7 @@ head
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width, initial-scale=1')
   link(rel='stylesheet', href='/css/foundation.css')
+  link(rel='stylesheet', href='/css/app.css')
 body
   div(class='top-bar')
     div(class='top-bar-left')
@@ -13,7 +14,11 @@ body
           a(href='/') Start
         li
           a(href='/z/about') Om
-  block content
+  div(class='row medium-8 large-7 columns')
+    block content
+  footer(class='footer')
+    div(class='row')
+      div(class='small-12 medium-12 medium-push-12 columns') Trolololo
   script(src='https://code.jquery.com/jquery-2.1.4.min.js')
   script(src='/js/foundation.js')
   script(src='/js/app.js')
