@@ -14,7 +14,7 @@ var http = require('http').Server(app);
 app.set('view engine', 'jade');
 app.get('/', function (req, res) {
   fs.readFile('./content/index.md', 'utf8', function(err, contents) {
-      res.render('index', {'markdownhtml': markdown.toHTML(contents)});
+      res.render('standardpage', {'markdownhtml': markdown.toHTML(contents)});
     // res.send(toptemplate + markdown.toHTML(contents) + bottomtemplate);
   });
 
@@ -27,9 +27,7 @@ app.get('/', function (req, res) {
     try {
       fs.statSync(filepath);
       fs.readFile(filepath, 'utf8', function(err, contents) {
-        var toptemplate = getTemplateFile("top");
-        var bottomtemplate = getTemplateFile("bottom");
-         res.send(toptemplate + markdown.toHTML(contents) + bottomtemplate);
+        res.render('standardpage', {'markdownhtml': markdown.toHTML(contents)});
        });
     }
 
