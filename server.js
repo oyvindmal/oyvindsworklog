@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
 app.use('/img', express.static('img'));
-  app.get('/z/:filename(\\w+)', function (req, res) {
+  app.get('/page/:filename(\\w+)', function (req, res) {
 
     var renderfile = req.params.filename;
     var filepath = './content/' + renderfile + '.md';
@@ -40,6 +40,26 @@ app.use('/img', express.static('img'));
     }
 });
 
+app.get('/blog', function (req, res) {
+  res.render('blogfront');
+})
+
+app.get('/blog/:filename(\\w+)', function (req, res) {
+
+  var renderfile = req.params.filename;
+  var filepath = './content/blog/' + renderfile + '.md';
+  try {
+    fs.statSync(filepath);
+    fs.readFile(filepath, 'utf8', function(err, contents) {
+      res.render('blogpost', {'markdownhtml': markdown.toHTML(contents)});
+     });
+  }
+
+  catch (e)
+  {
+    res.send("not found");
+  }
+});
 http.listen(port, function() {
   console.log("lol");
 })
