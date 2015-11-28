@@ -8,3 +8,6 @@ Dette er skrevet med github
 
 <!-- regular html comment --> 
 <!--- special completely ignored comment --> 
+
+
+[comment]: # (This actually is the most platform independent comment)
