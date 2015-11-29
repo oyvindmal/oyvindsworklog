@@ -1,14 +1,7 @@
-/*var http = require('http')
-
-http.createServer(function(req, res) {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World\n');
-}).listen(port);*/
-
 var express = require('express');
 var fs = require('fs');
-var markdown = require( "markdown" ).markdown; // to be removed
-
+//var markdown = require( "markdown" ).markdown; // to be removed
+var marked = require('marked');
 var mdh = require('./helpers/markdown.js');
 var bch = require('./helpers/blogcontent.js');
 
@@ -18,7 +11,7 @@ var http = require('http').Server(app);
 app.set('view engine', 'jade');
 app.get('/', function (req, res) {
   fs.readFile('./content/index.md', 'utf8', function(err, contents) {
-      res.render('frontpage', {'markdownhtml': markdown.toHTML(contents)});
+      res.render('frontpage', {'markdownhtml': marked(contents)});
   });
 
 
@@ -34,7 +27,7 @@ app.use('/img', express.static('img'));
     try {
       fs.statSync(filepath);
       fs.readFile(filepath, 'utf8', function(err, contents) {
-        res.render('standardpage', {'markdownhtml': markdown.toHTML(contents)});
+        res.render('standardpage', {'markdownhtml': marked(contents)});
        });
     }
 
@@ -56,9 +49,6 @@ app.get('/blog/:filename(\\w+)', function (req, res) {
   var filepath = './content/blog/' + renderfile + '.md';
   try {
     fs.statSync(filepath);
-    /*fs.readFile(filepath, 'utf8', function(err, contents) {
-      res.render('blogpost', {'markdownhtml': markdown.toHTML(contents)});
-    });*/
 
     var dataobj = mdh.getMetadataForPost(renderfile);
     dataobj.markdownhtml = mdh.getHTMLContentForPost(renderfile);
