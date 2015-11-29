@@ -1,6 +1,6 @@
 extends layout
 block content
-  p
-    strong PageType:
-    span blogfront
-  a(href='/blog/testpost') Test bloggpost
+  each val in blogposts
+    h2
+      a(href='/blog/' + val.filename)= val.title
+      small(class='datestamp')= (val.date)

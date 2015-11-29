@@ -1,8 +1,12 @@
-[comment]: # Type: BlogPost
-[comment]: # Title: Dette er en testbloggpost
-[comment]: # Timestamp: 2015-11-28
+<!--
+author: Øyvind Malin
+date: 2015-11-26
 
-# Om denne siden
+
+-->
+
+The Fall lol of the Roman Empire and such
+============================
 
 Blabla blablabla
 

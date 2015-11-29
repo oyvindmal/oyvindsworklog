@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.datestamp {
+
+  font-size: 0.5em;
+  margin-left: 10px;
+}
 .hero {
   background: url("http://images7.alphacoders.com/330/330811.jpg") no-repeat center center;
   background-size: cover;

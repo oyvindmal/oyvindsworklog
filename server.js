@@ -7,7 +7,11 @@ http.createServer(function(req, res) {
 
 var express = require('express');
 var fs = require('fs');
-var markdown = require( "markdown" ).markdown;
+var markdown = require( "markdown" ).markdown; // to be removed
+
+var mdh = require('./helpers/markdown.js');
+var bch = require('./helpers/blogcontent.js');
+
 var port = process.env.PORT || 1337;
 var app = express();
 var http = require('http').Server(app);
@@ -41,7 +45,9 @@ app.use('/img', express.static('img'));
 });
 
 app.get('/blog', function (req, res) {
-  res.render('blogfront');
+  console.log(bch.getBlogpostsOrderByDate());
+  res.render('blogfront', {"blogposts": bch.getBlogpostsOrderByDate()});
+
 })
 
 app.get('/blog/:filename(\\w+)', function (req, res) {
@@ -50,9 +56,13 @@ app.get('/blog/:filename(\\w+)', function (req, res) {
   var filepath = './content/blog/' + renderfile + '.md';
   try {
     fs.statSync(filepath);
-    fs.readFile(filepath, 'utf8', function(err, contents) {
+    /*fs.readFile(filepath, 'utf8', function(err, contents) {
       res.render('blogpost', {'markdownhtml': markdown.toHTML(contents)});
-     });
+    });*/
+
+    var dataobj = mdh.getMetadataForPost(renderfile);
+    dataobj.markdownhtml = mdh.getHTMLContentForPost(renderfile);
+    res.render('blogpost', dataobj)
   }
 
   catch (e)
