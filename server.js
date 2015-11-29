@@ -18,7 +18,7 @@ var http = require('http').Server(app);
 app.set('view engine', 'jade');
 app.get('/', function (req, res) {
   fs.readFile('./content/index.md', 'utf8', function(err, contents) {
-      res.render('standardpage', {'markdownhtml': markdown.toHTML(contents)});
+      res.render('frontpage', {'markdownhtml': markdown.toHTML(contents)});
   });
 
 

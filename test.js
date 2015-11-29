@@ -1,8 +1,4 @@
 var bch = require('./helpers/blogcontent.js');
+var mdh = require('./helpers/markdown.js');
 
-console.log(bch.getBlogpostsOrderByDate())
-/*console.log(mdh.getMetadataForPost("testpost"))
-console.log("---");
-console.log(mdh.getContentForPost("testpost"));
-console.log("---");
-console.log(mdh.getHTMLContentForPost("testpost"));*/
+console.log(mdh.getHTMLContentForPost("logge_data_fra_telldus_socket"));

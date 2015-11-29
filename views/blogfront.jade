@@ -1,6 +1,7 @@
 extends layout
 block content
   each val in blogposts
-    h2
-      a(href='/blog/' + val.filename)= val.title
+    h2= val.title
       small(class='datestamp')= (val.date)
+    p
+      a(href='/blog/' + val.filename) Permanent lenke

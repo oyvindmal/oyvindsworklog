@@ -1,5 +1,6 @@
 var fs = require('fs');
 var mde = require('markdown-extra');
+var marked = require('marked');
 var markdown = require( "markdown" ).markdown;
 var basepath = './../content/';
 
@@ -25,7 +26,8 @@ module.exports.getHTMLContentForPost = function (filename) {
   var contents = fs.readFileSync('./content/blog/' + filename + '.md', 'utf8');
       var content = mde.content(contents);
 
-      return markdown.toHTML(content)
+      return marked(content)
+      //return markdown.toHTML(content)
 };
 
 
