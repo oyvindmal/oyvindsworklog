@@ -20,6 +20,7 @@ app.get('/', function (req, res) {
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
 app.use('/img', express.static('img'));
+app.use('/pictures', express.static('pictures'));
   app.get('/page/:filename(\\w+)', function (req, res) {
 
     var renderfile = req.params.filename;
