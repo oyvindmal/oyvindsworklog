@@ -6,3 +6,5 @@ På denne siden samler jeg lenker til smarte verktøy foreløbig veldig uorganis
 * [MarkdownEditor](http://dillinger.io/)
 * [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Fritzing](http://fritzing.org/home/) - Verktøy for å tegne elektronikkretser med mange ferdige objekter.
+
+blablabla
