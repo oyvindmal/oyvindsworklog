@@ -15,7 +15,7 @@ Blabla bla mer tekst
 
 ![alt text](/pictures/alarm3.jpg "") ![alt text](/pictures/alarm2.jpg "")
 
-Den opprinnelige planen var å montere den på siden av kjøleskapet (bildet til venstre)
+Den opprinnelige planen var å montere den på siden av kjøleskapet (bildet til venstre), men avstanden viste seg å være for stor til at kontakten fungerte skikkelig. Løsningen ble
 Min magnetkontakt kom med dobbeltsidig teip ferdig slik at det bare var å limes på. Jeg vil anbefale at du benytter tape til å feste den på
 
 "Kode"
