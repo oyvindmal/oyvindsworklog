@@ -44,6 +44,13 @@ app.get('/blog', function (req, res) {
 
 })
 
+app.get('/api/blog', function (req, res) {
+      res.setHeader('Content-Type', 'application/json');
+  res.send(JSON.stringify(bch.getBlogpostsOrderByDate()));
+  //res.render('blogfront', {"blogposts": bch.getBlogpostsOrderByDate()});
+
+})
+
 app.get('/blog/:filename(\\w+)', function (req, res) {
 
   var renderfile = req.params.filename;
