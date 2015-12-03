@@ -39,7 +39,7 @@ app.use('/pictures', express.static('pictures'));
 });
 
 app.get('/blog', function (req, res) {
-  console.log(bch.getBlogpostsOrderByDate());
+
   res.render('blogfront', {"blogposts": bch.getBlogpostsOrderByDate()});
 
 })
