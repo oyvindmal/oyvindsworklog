@@ -40,7 +40,7 @@ app.use('/pictures', express.static('pictures'));
 
 app.get('/blog', function (req, res) {
 
-  res.render('blogfront', {"blogposts": bch.getBlogpostsOrderByDate()});
+  res.render('blogfront');
 
 })
 
