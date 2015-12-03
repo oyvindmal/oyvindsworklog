@@ -12,24 +12,24 @@
 }
 
 .menu > li > a {
-  color: #000;
-  background: #78808C;
+  color: #fff;
+  background: #292c2f;
   border-bottom:3px #78808C solid;
   margin-left:4px;
 }
 .menu > li > a:hover {
-  border-bottom:3px #292c2f solid;
+  border-bottom:3px #fff solid;
 }
 
 .menu-text {
-  color: #000;
+  color: #fff;
 }
 .top-bar {
-  background: #78808C;
+  background: #292c2f;
 }
 
 ul.menu {
-  background: #78808C;
+  background: #292c2f;
 }
 .hero {
   background: url(/img/board.jpg);
