@@ -9,7 +9,7 @@ Sammenligning: Tellstick-modeller
 ============================
 <!-- StartExcerpt -->
 
-Blablabla blalalalalala
+Blablabla b333lalalalalala
 
 For å kunne lytte på signaler fra magnetkontakt må du ha en 433mhz mottaker. Jeg bruker [Tellstick Duo](http://www.kjell.com/no/produkter/elektro/el-produkter/sterkstrom/usb-kontroll/telldus-tellstick-duo-p50198) og koden i denne bloggposten er basert på denne.
 
