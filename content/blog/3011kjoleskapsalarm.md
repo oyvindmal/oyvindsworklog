@@ -1,14 +1,20 @@
 <!--
 author: Øyvind Malin
-date: 2015-11-30
-image: placeholder.png
+date: 2015-12-04
+image: magnet1.jpg
 
 -->
 
 Kjøleskapsalarm
 ============================
+<!-- StartExcerpt -->
 Ødelagte matvarer som følge av at døren på kjøleskapet eller fryseboksen ikke er lukket er veldig irriterende.
-
+<!-- EndExcerpt -->
+<div class="roundcontainer">
+  <div class="round">
+    <img src="/img/blog/magnet1.jpg">
+  </div>
+</div>
 ![alt text](/pictures/alarm1.jpg "")
 
 Blabla bla mer tekst
