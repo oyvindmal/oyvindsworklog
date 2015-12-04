@@ -1,7 +1,7 @@
 <!--
 author: Øyvind Malin
 date: 2015-11-30
-
+image: placeholder.png
 
 -->
 
