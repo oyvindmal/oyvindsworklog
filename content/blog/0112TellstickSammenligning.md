@@ -14,7 +14,11 @@ Det finnes etterhvert mange modeller av Telldus Tellstick på det norske markede
 
 <!-- EndExcerpt -->
 
-
+<div class="roundcontainer">
+  <div class="round">
+    <img src="/img/blog/tellsticks.png">
+  </div>
+</div>
 Tellstick blablablabla er
 ## Tellstick
 
