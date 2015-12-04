@@ -1,4 +1,4 @@
-Smarte verkøy
+Verktøykasse
 ============================
 På denne siden samler jeg lenker til smarte verktøy foreløbig veldig uorganisert.
 
