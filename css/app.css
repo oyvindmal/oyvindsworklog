@@ -41,18 +41,22 @@ box-shadow: 2px 2px 20px 0px rgba(0,0,0,0.24);
 
 }
 
-.menu > li > a {
+.menu > li.menuitem > a {
   color: #fff;
   background: #292c2f;
   border-bottom:3px #78808C solid;
   margin-left:4px;
 }
-.menu > li > a:hover {
+.menu > li.menuitem > a:hover {
   border-bottom:3px #087214 solid;
 }
 
 .menu-text {
   color: #fff;
+}
+
+.menu-text a {
+  border-bottom: 0;
 }
 
 .menu-text img {
