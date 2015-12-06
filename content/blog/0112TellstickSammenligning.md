@@ -2,8 +2,8 @@
 author: Øyvind Malin
 date: 2015-12-01
 image: tellsticks.png
-
-
+tags: hjemmeautomasjon,tellstick
+status: published
 -->
 
 Sammenligning: Tellstick-modeller

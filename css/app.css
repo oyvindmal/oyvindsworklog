@@ -1,4 +1,21 @@
 @charset "UTF-8";
+
+#tags {
+
+}
+#tags li {
+  padding:8px;
+  background: #292c2f;
+  color:#fff;
+  text-transform: capitalize;
+  font-size:0.7em;
+  margin:5px;
+    display: inline-block;
+}
+
+#removefilters {
+  font-size:0.7em;
+}
 .roundcontainer {
   text-align:center;
   width:100%;

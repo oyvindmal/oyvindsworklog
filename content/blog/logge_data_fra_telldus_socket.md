@@ -2,7 +2,8 @@
 author: Øyvind Malin
 date: 2015-11-29
 image: placeholder.png
-
+tags: hjemmeautomasjon,tellstick
+status: draft
 -->
 
 Logge data fra Telldus Socket

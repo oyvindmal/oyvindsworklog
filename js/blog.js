@@ -38,6 +38,16 @@ $(document).ready(function () {
           bp.appendTo(container);
       })
 
+      $.getJSON('/api/tags', function (data) {
+        var container = $("#tags");
+
+        $.each(data, function(index, value) {
+          var li = $("<li />").html(value);
+
+          li.appendTo(container);
+        })
+      })
+
 
   })
 

@@ -2,7 +2,8 @@
 author: Øyvind Malin
 date: 2015-12-04
 image: magnet1.jpg
-
+tags: hjemmeautomasjon,tellstick,programmering
+status: published
 -->
 
 Kjøleskapsalarm

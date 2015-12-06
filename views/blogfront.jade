@@ -1,8 +1,12 @@
 extends layout
 block content
-  div(class='medium-10 large-10 columns', id='blogcontent')
+  div(class='medium-9 large-9 columns', id='blogcontent')
 
-  div(class='medium-2 large-2 columns')
-    p Her kommer tags
+  div(class='medium-3 large-3 columns')
+    h4 Tagger
+    ul(id='tags')
+
+    p
+      a(href="#", id="removefilters") Fjern filtrering
 block footerscripts
   script(src='/js/blog.js')
