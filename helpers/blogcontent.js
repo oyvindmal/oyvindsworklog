@@ -33,7 +33,7 @@ module.exports.getBlogpostsOrderByDate = function () {
   postarray.sort(function(a,b) {
     return new Date(b.date).getTime() - new Date(a.date).getTime()
 });
-console.log(postarray);
+
   return postarray;
 };
 

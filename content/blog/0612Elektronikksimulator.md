@@ -9,7 +9,7 @@ Simuler dine elektronikkprosjekter
 ============================
 <!-- StartExcerpt -->
 
-Det finnes etterhvert mange modeller av Telldus Tellstick på det norske markedet. De har ulike spesifikasjoner og er egnet til ulike typer bruk. I denne sammenligningen ønsker jeg å belyse forskjellene mellom de ulike modellene.
+Feilkjøp av komponenter 
 
 <!-- EndExcerpt -->
 

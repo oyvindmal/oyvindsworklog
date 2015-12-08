@@ -1,20 +1,23 @@
 <!--
 author: Øyvind Malin
-date: 2015-12-05
-image: win10rasp.png
-tags: windows,elektronikk,programmering,raspberry pi,visual studio
-project: Makrokontroller
+date: 2015-12-09 12:12:12
+image: arduinoprosjekt2.png
+tags: arduino,elektronikk,programmering
 status: published
 -->
 
-Makrokontroller - del 1
+Arduino prosjekt #2 - Bryter
 ============================
 <!-- StartExcerpt -->
 
 Det finnes etterhvert mange modeller av Telldus Tellstick på det norske markedet. De har ulike spesifikasjoner og er egnet til ulike typer bruk. I denne sammenligningen ønsker jeg å belyse forskjellene mellom de ulike modellene.
 
 <!-- EndExcerpt -->
-
+<div class="roundcontainer">
+  <div class="round">
+    <img src="/img/blog/arduinoprosjekt2.png">
+  </div>
+</div>
 
 
 ![alt text](/pictures/makrokonsept.png "")
