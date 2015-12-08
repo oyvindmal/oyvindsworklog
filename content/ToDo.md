@@ -17,3 +17,5 @@ ToDo
   * Hente bloggposter med en bestemt prosjekt-tagg
   * Bilde/logo
 * Fikse footer slik at den er fixed
+* Implementere UnderScore.js
+  * Uthenting av bloggposter
